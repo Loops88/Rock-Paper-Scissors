@@ -1,10 +1,93 @@
-h2 {
-    display: grid;
+* {
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px 0;
 }
 
-button {
-    background-color: lightblue;
-    border-radius: 15px;
+.title {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff4d4;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.rules {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #c22f1f;
+    padding: 0 10px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 15px;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#result {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    background-color: #fff4d4;
+}
+
+.credits {
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+p {
+    display: grid;
+    background-color: #ff732e;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
     padding: 10px 15px;
 }
 
+button {
+    background-color: #392c42;
+    color: #fff4d4;
+    border-radius: 15px;
+    box-shadow: 2px 1px rgb(3, 3, 3);
+    padding: 0 30px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Nabla', cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#weaponSelect{
+    padding: 15px 20px;
+    background-color: #392c42;
+    color: #fff4d4;
+}
+
+img {
+    max-width: 100px;
+    margin: 20px 0;
+}
