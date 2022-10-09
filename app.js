@@ -32,7 +32,8 @@ function getWinner(computerChoice, userChoice) {
     } else {
         console.log("dunno");
     }
-    result.innerText = `Result: ${gameResult}`;
+    result.innerText = `${gameResult}`;
+    result.style.display = "grid";
 }
 
 function genComputerChoice() {
