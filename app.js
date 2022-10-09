@@ -32,7 +32,7 @@ function getWinner(computerChoice, userChoice) {
     } else {
         console.log("dunno");
     }
-    result.innerText = gameResult;
+    result.innerText = `Result: ${gameResult}`;
 }
 
 function genComputerChoice() {
@@ -52,9 +52,8 @@ choiceButtons.forEach(function(choice) {
         // console.log(event.target);
         compChose = genComputerChoice();
         getWinner(compChose, userChose);
-        compChoice.innerText = compChose;
-        userChoice.innerText = userChose;
+        compChoice.innerText = `Computer: ${compChose}`;
+        userChoice.innerText = `Human: ${userChose}`;
         computerChose = generateRandomNum();
     })
 })
-
