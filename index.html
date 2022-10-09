@@ -6,15 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <script src="app.js" defer></script>
 </head>
 <body>
-    <h2>Computer Choice: <span id="computer-display"></span></h2>
-    <h2>User Choice: <span id="user-display"></span></h2>
-    <h2>Result: <span id="result"></span></h2>
+    <div class="title">
+        <h1>Rock-Paper-Scissors</h1>
+    </div>
 
-    <button class="choiceButtons" id="rock">Rock</button>
-    <button class="choiceButtons" id="paper">Paper</button>
-    <button class="choiceButtons" id="scissors">Scissors</button>
+    <div class="logos">
+        <img src="assets/rock.png" alt="rock logo">
+        <img src="assets/paper.png" alt="paper logo">
+        <img src="assets/scissors.png" alt="scissors logo">
+    </div>
+
+    <div class="rules">
+        <h2>Rules: Rock beats Scissors, Scissors beats Paper and Paper beats Rock</h3>
+    </div>
+
+    <div class="players">
+        <p id="user-display">Human:</p>
+        <p>VS</p>
+        <p id="computer-display">Computer:</p>
+    </div>
+        
+    <div class="result">
+        <p id="result">Result:</p>    
+    </div>
+
+    <div class="buttons">
+        <h5 id="weaponSelect">Select your weapon:</h5>
+        <button class="choiceButtons" id="rock">Rock</button>
+        <button class="choiceButtons" id="paper">Paper</button>
+        <button class="choiceButtons" id="scissors">Scissors</button>
+    </div>
+
+    <div class="credits">
+        <a href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Icongeek26 - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Freepik - Flaticon</a>    
+    </div>
 </body>
 </html>
